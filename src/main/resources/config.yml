@@ -1,0 +1,4 @@
+# DuelPlugin configuration
+
+# How long (in seconds) a duel request stays valid before it expires
+request-timeout-seconds: 30
