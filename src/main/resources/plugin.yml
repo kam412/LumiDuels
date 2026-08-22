@@ -1,0 +1,26 @@
+name: DuelPlugin
+version: '1.0.0'
+main: com.duelplugin.DuelPlugin
+api-version: '1.20'
+author: kam412
+
+commands:
+  duel:
+    description: Send, accept, or manage duel requests
+    usage: /duel <player> <kit> | /duel accept | /duel deny | /duel cancel | /duel stats [player]
+  duelarena:
+    description: Manage duel arenas
+    usage: /duelarena <create|pos1|pos2|spawn1|spawn2|remove|list> [name]
+    permission: duel.admin
+  duelkit:
+    description: Manage duel kits
+    usage: /duelkit <create|delete|list|give> [name]
+    permission: duel.admin
+
+permissions:
+  duel.admin:
+    description: Allows managing arenas and kits
+    default: op
+  duel.use:
+    description: Allows using the duel system
+    default: true
